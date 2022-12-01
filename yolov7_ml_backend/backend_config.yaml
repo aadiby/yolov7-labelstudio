@@ -1,0 +1,22 @@
+# name for the trained model
+NAME: yolov7_custom
+
+# location where images & labels will be placed for training
+IMG_DATA: ./data/images/
+LABEL_DATA: ./data/labels/
+
+# save location for finetuned weights
+INIT_WEIGHTS: ./checkpoints/starting_weights.pt
+
+# save location for weights after training
+TRAINED_WEIGHTS: ./checkpoints/trained_weights.pt
+
+# path to yolo repo
+REPO: "./yolov7"
+
+# epochs
+NUM_EPOCHS: 70
+
+# configuration of your classes
+CLASSES:
+  0: class 1

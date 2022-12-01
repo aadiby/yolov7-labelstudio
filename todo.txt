@@ -1,0 +1,11 @@
+label-studio-ml init my_ml_backend --foe --script ./label_studio_ml/examples/yolo_blood/model_backend.py
+label-studio-ml start ./my_ml_backend
+label-studio start
+
+custom training call
+
+python ./yolov7/train.py --workers 8 --device cpu --batch-size 8 --data ./config/data.yaml --img 640 480 --cfg ./config/model_config.yaml --weights ./config/checkpoints/starting_weights.pt --name bloodcell_test --hyp ./config/hyp.scratch.custom.yaml --epochs 2 --exist-ok
+
+python ./yolov7/train.py --workers 8 --device cpu --batch-size 8 --data ./config/data.yaml --img 640 480 --cfg ./config/model_config.yaml --weights ./config/checkpoints/starting_weights.pt --name bloodcell_trained --hyp ./config/hyp.scratch.custom.yaml --epochs 10 --exist-ok
+
+python ./yolov7/train.py --workers 8 --device 0 --batch-size 8 --data ./config/data.yaml --img 640 480 --cfg ./config/model_config.yaml --weights ./config/checkpoints/starting_weights.pt --name bloodcell_gpu --hyp ./config/hyp.scratch.custom.yaml --epochs 10 --exist-ok

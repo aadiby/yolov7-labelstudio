@@ -1,0 +1,10 @@
+# path to train/val folder where images are going to be placed
+train: ./data/images/train/
+val: ./data/images/val/
+
+# identify the number of classes
+nc: 1
+
+# provide names for your classes
+names:
+  0: class 1

@@ -1,0 +1,2 @@
+place trained or untrained model with .pt format here to start training
+name: "starting_weights.pt"
