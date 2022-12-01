@@ -27,9 +27,11 @@ Follow this example tutorial to run an ML backend with a simple text classifier:
    ```
    
 4. Start Label Studio and create an object detection project. Use the exact same classes & number of classes used in:
-- ./config/data.yaml
-- ./config/model_config.yaml
-- ./yolov7_ml_backend/backend_config.yaml
+    ```
+    - ./config/data.yaml
+    - ./config/model_config.yaml
+    - ./yolov7_ml_backend/backend_config.yaml
+    ```
 
 5. Upload images to start annotations.
 
