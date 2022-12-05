@@ -4,11 +4,11 @@ import label_studio_ml
 print(label_studio_ml.package_name, label_studio_ml.__version__)
 
 # Readme
-with open('README.md', 'r', encoding='utf-8') as f:
+with open('README-labelstudioml.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 # Module dependencies
-with open('requirements.txt') as f:
+with open('requirements-labelstudioml.txt') as f:
     requirements = f.read().splitlines()
 
 setuptools.setup(
